@@ -37,6 +37,21 @@ const AdComponent = (props: Props) => {
       // Request and render an ad for the "banner-ad" slot
       window.googletag?.display?.("banner-ad");
     });
+
+    window.googletag.cmd.push(() => {
+      if (window.googletag?.defineSlot && window.googletag?.pubads) {
+        const slot = window.googletag.defineSlot(
+          "/6355419/Travel",
+          ["fluid"],
+          "banner-ad-2",
+        );
+        slot?.addService(window.googletag.pubads());
+      }
+      // Enable the PubAdsService
+      window.googletag?.enableServices?.();
+      // Request and render an ad for the "banner-ad" slot
+      window.googletag?.display?.("banner-ad-2");
+    });
   }, []);
 
   return (
@@ -45,7 +60,10 @@ const AdComponent = (props: Props) => {
         src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"
         strategy="lazyOnload"
       />
+      Test ad
       <div id="banner-ad" style={{ width: "300px", height: "250px" }}></div>
+      Fluid ad
+      <div id="banner-ad-2" style={{ width: "500px", height: "250px" }}></div>
     </>
   );
 };
