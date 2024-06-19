@@ -1,0 +1,10 @@
+{
+  "title": "Fixed-size ad",
+  "description": "Displays a fixed-sized test ad",
+  "slots": [
+    {
+      "adUnit": "/6355419/Travel/Europe/France/Paris",
+      "size": [300, 250]
+    }
+  ]
+}

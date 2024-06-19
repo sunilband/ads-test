@@ -1,0 +1,14 @@
+{
+  "title": "Multi-size ad",
+  "description": "Display a multi-sized test ad",
+  "slots": [
+    {
+      "adUnit": "/6355419/Travel/Europe",
+      "size": [
+        [300, 250],
+        [728, 90],
+        [750, 200]
+      ]
+    }
+  ]
+}

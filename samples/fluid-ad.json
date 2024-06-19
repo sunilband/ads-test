@@ -1,0 +1,10 @@
+{
+  "title": "Fluid ad",
+  "description": "Displays a fluid test ad",
+  "slots": [
+    {
+      "adUnit": "/6355419/Travel",
+      "size": ["fluid"]
+    }
+  ]
+}
