@@ -63,7 +63,7 @@ const AdComponent = (props: Props) => {
       Test ad
       <div id="banner-ad" style={{ width: "300px", height: "250px" }}></div>
       Fluid ad
-      <div id="banner-ad-2" style={{ width: "500px", height: "250px" }}></div>
+      <div id="banner-ad-2"></div>
     </>
   );
 };
